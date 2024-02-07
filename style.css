@@ -73,10 +73,6 @@ body
   flex-direction: row;
 }
 
-#no-button{
-  
-}
-
 .hidden-message {
   display: none;
   margin-top: 20px;
