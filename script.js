@@ -62,6 +62,15 @@ function showMessage(response) {
     cycleImages(response);
     document.getElementById("question").textContent = randomMessage;
     document.getElementById("name").style.display = "none";
+    
+    // Calculate random position within the initial screen width and height
+    const randomX = Math.floor(Math.random() * maxWidth);
+    const randomY = Math.floor(Math.random() * maxHeight);
+  
+    // Apply new position
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
+    
   } else if (response === "Yes") {
     removeUnwantedImages();
     document.getElementById("question").textContent = randomMessage;
